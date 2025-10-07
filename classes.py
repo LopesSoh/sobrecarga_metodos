@@ -4,7 +4,8 @@ class Gerador_Relatorios:
 
         match len(args, kwargs):
             case 1:
-                pass
+                #Se apenas 1 argumento foi passado, ele assume que é o corpo do relatório.
+                relatorio = args[0]
             case 2:
                 pass
             case 3:
