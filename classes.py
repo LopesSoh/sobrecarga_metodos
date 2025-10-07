@@ -1,8 +1,8 @@
 class Gerador_Relatorios:
-    def gerar(*args, **kwargs):
+    def gerar(self, *args, **kwargs):
         relatorio = ""
 
-        match len(args, kwargs):
+        match len(args):
             case 1:
                 #Se apenas 1 argumento foi passado, ele assume que é o corpo do relatório.
                 relatorio = args[0]
@@ -17,3 +17,5 @@ class Gerador_Relatorios:
             
         if kwargs:
             pass
+
+        return relatorio   # <-- ESSENCIAL
