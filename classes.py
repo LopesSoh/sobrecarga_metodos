@@ -9,11 +9,11 @@ class Gerador_Relatorios:
             case 2:
                 #Se apenas 2 argumentos for passado, ele entende como um titulo e outro corpo de texto
                 titulo, corpo = args
-                relatorio = f"\n\n{'=' * 4}\n{titulo.upper()}\n{'=' * 4}\n{corpo}"
+                relatorio = f"\n\n{'=' * 40}\n{titulo.upper()}\n{'=' * 40}\n{corpo}"
             case 3:
                 titulo, corpo, rodape = args
                 relatorio = (
-                    f"{'=' * 40}\n{titulo.upper()}\n{'=' * 40}\n"
+                    f"\n\n{'=' * 40}\n{titulo.upper()}\n{'=' * 40}\n"
                     f"{corpo}\n{'-' * 40}\n{rodape}"
                 )
             case 4:
