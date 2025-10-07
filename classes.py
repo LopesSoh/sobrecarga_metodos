@@ -16,12 +16,20 @@ class Gerador_Relatorios:
                     f"\n\n{'=' * 40}\n{titulo.upper()}\n{'=' * 40}\n"
                     f"{corpo}\n{'-' * 40}\n{rodape}"
                 )
-            case 4:
-                pass
-            case _:
-                pass
-            
+            case _ if len(args) > 3:
+                # Case 4: título + dois ou mais parágrafos
+                titulo = args[0]
+                paragrafos = args[1:]  # todos os parágrafos depois do título
+                relatorio = f"\n\n{'=' * 40}\n{titulo.upper()}\n{'=' * 40}\n"
+                for i in range(len(paragrafos)):
+                    relatorio += paragrafos[i]
+                    if i < len(paragrafos) - 1:
+                        relatorio += "\n\n"
+
+        # Metadados opcionais em qualquer case
         if kwargs:
-            pass
+            relatorio += "\n\n" + "=" * 20 + " METADADOS " + "=" * 20 + "\n"
+            for chave, valor in kwargs.items():
+                relatorio += f"{chave.capitalize()}: {valor}\n"
 
         return relatorio   # <-- ESSENCIAL

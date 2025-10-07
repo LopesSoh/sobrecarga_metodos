@@ -6,3 +6,19 @@ print(g.gerar("Durante o período de acompanhamento do projeto, foram realizadas
 print(g.gerar("Relatório de Vendas", "Durante o período de acompanhamento do projeto, foram realizadas diversas atividades planejadas, incluindo a coleta de dados, análise das informações e implementação de estratégias propostas. Os resultados obtidos indicam avanços significativos em relação aos objetivos iniciais, demonstrando a eficácia das metodologias aplicadas e a dedicação da equipe envolvida. Observou-se também a necessidade de ajustes em algumas etapas, os quais já foram identificados e incorporados ao planejamento futuro, garantindo maior eficiência e melhor aproveitamento dos recursos disponíveis."))
 
 print(g.gerar("Relatório Financeiro", "Durante o período de acompanhamento do projeto, foram realizadas diversas atividades planejadas, incluindo a coleta de dados, análise das informações e implementação de estratégias propostas. Os resultados obtidos indicam avanços significativos em relação aos objetivos iniciais, demonstrando a eficácia das metodologias aplicadas e a dedicação da equipe envolvida. Observou-se também a necessidade de ajustes em algumas etapas, os quais já foram identificados e incorporados ao planejamento futuro, garantindo maior eficiência e melhor aproveitamento dos recursos disponíveis.", "Gerado automaticamente."))
+
+print(g.gerar(
+    "Relatório de vendas",
+    "Parágrafo 1",
+    "Parágrafo 2",
+    "Parágrafo 3"
+))
+
+print(g.gerar(
+    "Relatório de vendas",
+    "Parágrafo 1",
+    "Parágrafo 2",
+    autor="Divinha",
+    data="07/10/2025"
+))
+
